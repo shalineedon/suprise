@@ -163,7 +163,23 @@ Every love story is beautiful... but ours is my favorite.Lets Start
 <div class="photo-frame">
 <img src="Don.jpg" alt="Our Photo">
 </div>
+<audio id="bgMusic" loop>
+    <source src="thora.mp3" type="audio/mpeg">
+</audio>
 
+<button onclick="startLove()">Open My Heart ❤️</button>
+
+<script>
+function startLove() {
+    const music = document.getElementById("bgMusic");
+
+    music.play().catch(err => {
+        console.log("Blocked:", err);
+    });
+}
+</script>
+
+    
 <button onclick="surprise()">Open My Heart ❤️</button>
 
 <div id="loveMessage" class="hidden">
