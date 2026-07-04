@@ -166,7 +166,10 @@ Every love story is beautiful... but ours is my favorite.Lets Start
 <audio id="bgMusic" loop>
     <source src="thora.mp3" type="audio/mpeg">
 </audio>
-<button onclick="startLove()">Start Song ❤️</button>
+
+<button onclick="startLove()"> Start music ❤️</button>
+
+<script>
 function startLove() {
     const music = document.getElementById("bgMusic");
 
@@ -174,9 +177,7 @@ function startLove() {
         console.log("Blocked:", err);
     });
 }
-</script>
-
-    
+</script>   
 <button onclick="surprise()">Open My Heart ❤️</button>
 
 <div id="loveMessage" class="hidden">
